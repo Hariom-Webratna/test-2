@@ -29,11 +29,11 @@ include "config.php";
                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
-
                 </div>
             </div>
 
             <br/>
+
             <table id="myTable" border="1">
                 <thead class="thead-dark">
                     <tr>
@@ -41,7 +41,6 @@ include "config.php";
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
                         <th scope="col">Action</th>
-
                     </tr>
                 </thead>
                 <?php
@@ -51,7 +50,6 @@ include "config.php";
                     $id = $row['id'];
                     $name = $row['emp_name'];
                     $email = $row['email'];
-
                 ?>
                 <tr>
                     <td><?php echo $id;?></td>
@@ -64,10 +62,10 @@ include "config.php";
                 ?>
             </table>
             <script type='text/javascript'>
-            $(document).ready(function(){
-
-                $('.userinfo').click(function(){
-
+            $(document).ready(function()
+             {
+                $('.userinfo').click(function()
+                   {
                     var userid = $(this).data('id');
 
                     // AJAX request
